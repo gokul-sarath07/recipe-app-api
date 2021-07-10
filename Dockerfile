@@ -1,5 +1,5 @@
 # Python version to run in docker
-FROM python:3.8-alpine
+FROM python:3.7-alpine
 # To know who maintains the project (optional)
 MAINTAINER Gokul Sarath
 
