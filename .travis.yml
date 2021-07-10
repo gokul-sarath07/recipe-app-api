@@ -2,7 +2,7 @@
 language: python
 # Python version.
 python:
-  - "3.8"
+  - "3.8-dev"
 
 # Includes the services avaliable for travis.
 services:
