@@ -1,0 +1,17 @@
+# Language travis expects.
+language: python
+# Python version.
+python:
+  - "3.8"
+
+# Includes the services avaliable for travis.
+services:
+  - docker
+
+# The script that travis runs before any automation commands.
+before_script: pip install docker-compose
+
+# Main script.
+# "flake8" is a linting tool for automated checking of your source code for programmatic and stylistic errors.
+script:
+  - docker-compose run app sh -c "python manage.py test && flake8"
